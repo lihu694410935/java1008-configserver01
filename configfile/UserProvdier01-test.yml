@@ -1,0 +1,18 @@
+server:
+  port: 5001
+spring:
+  application:
+    name: userprovdier
+  datasource:
+    url: jdbc:mysql://localhost:3306/test1?serverTimezone=GMT%2B8
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka,http://localhost:10087/eureka
